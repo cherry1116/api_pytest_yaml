@@ -1,0 +1,5 @@
+{'name': '直播室设置是否加人', 'request': {'url': 'nuskin/live/room/$liveRoomId/config', 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'User-Agent': 'python-requests/2.21.0', 'token': '$token'}, 'json': {'liveRoomId': '$liveRoomId'}}, 'validate': [{'eq': ['$.code', '0']}, {'eq': ['$.success', True]}]}
+实际结果：0
+期望结果：0
+实际结果：True
+期望结果：True

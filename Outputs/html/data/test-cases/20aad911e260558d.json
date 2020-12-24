@@ -1,0 +1,150 @@
+{
+  "uid" : "20aad911e260558d",
+  "name" : "test_01[item1]",
+  "fullName" : "test_01.Test#test_01",
+  "historyId" : "82797ebb2fc8c7145cd8c4fe2885a8ae",
+  "time" : {
+    "start" : 1608794410844,
+    "stop" : 1608794411084,
+    "duration" : 240
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1608794410278,
+      "stop" : 1608794410321,
+      "duration" : 43
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1608794410843,
+      "stop" : 1608794410843,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "fast_teardown",
+    "time" : {
+      "start" : 1608794410843,
+      "stop" : 1608794410843,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "always_warn_for_deprecation",
+    "time" : {
+      "start" : 1608794410843,
+      "stop" : 1608794410843,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2b596dd6d029849f",
+      "name" : "stdout",
+      "source" : "2b596dd6d029849f.txt",
+      "type" : "text/plain",
+      "size" : 435
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fast_teardown::0",
+    "time" : {
+      "start" : 1608794411086,
+      "stop" : 1608794411086,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "test_api"
+  }, {
+    "name" : "suite",
+    "value" : "test_01"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test"
+  }, {
+    "name" : "host",
+    "value" : "cherry.local"
+  }, {
+    "name" : "thread",
+    "value" : "41052-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "item",
+    "value" : "{'test': {'name': '直播室列表-直属员工负责的', 'request': {'url': 'nuskin/live/room/list', 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'User-Agent': 'python-requests/2.21.0', 'token': '$token'}, 'json': {'liveRoomStatus': 0, 'liveRoomType': 1, 'liveRoomName': None}}, 'validate': [{'eq': ['$.code', '0']}, {'eq': ['$.success', True]}]}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "20aad911e260558d.json",
+  "parameterValues" : [ "{'test': {'name': '直播室列表-直属员工负责的', 'request': {'url': 'nuskin/live/room/list', 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'User-Agent': 'python-requests/2.21.0', 'token': '$token'}, 'json': {'liveRoomStatus': 0, 'liveRoomType': 1, 'liveRoomName': None}}, 'validate': [{'eq': ['$.code', '0']}, {'eq': ['$.success', True]}]}}" ]
+}
