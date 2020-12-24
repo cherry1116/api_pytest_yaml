@@ -1,0 +1,65 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "cherry.local",
+    "children" : [ {
+      "name" : "41052-MainThread",
+      "children" : [ {
+        "name" : "test_01[item0]",
+        "uid" : "131c1f026a74822d",
+        "parentUid" : "d28e548c92decd38e2736bd622b7e63c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608794410374,
+          "stop" : 1608794410833,
+          "duration" : 459
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test': {'name': '直播室列表-我负责的', 'request': {'url': 'nuskin/live/room/list', 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'User-Agent': 'python-requests/2.21.0', 'token': '$token'}, 'json': {'liveRoomStatus': 0, 'liveRoomType': 0, 'liveRoomName': None}}, 'extract': {'liveRoomId': '$.data.data[1].liveRoomId'}, 'validate': [{'eq': ['$.code', '0']}, {'eq': ['$.success', True]}]}}" ]
+      }, {
+        "name" : "test_01[item2]",
+        "uid" : "d23c3ecd88c61f55",
+        "parentUid" : "d28e548c92decd38e2736bd622b7e63c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608794411092,
+          "stop" : 1608794411279,
+          "duration" : 187
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test': {'name': '直播室设置是否加人前校验', 'request': {'url': 'nuskin/live/room/$liveRoomId/to/config', 'method': 'GET', 'headers': {'Content-Type': 'application/json', 'User-Agent': 'python-requests/2.21.0', 'token': '$token'}}, 'validate': [{'eq': ['$.code', '-1']}, {'eq': ['$.data', True]}]}}" ]
+      }, {
+        "name" : "test_01[item3]",
+        "uid" : "49e55c9e464bb948",
+        "parentUid" : "d28e548c92decd38e2736bd622b7e63c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608794411286,
+          "stop" : 1608794411543,
+          "duration" : 257
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test': {'name': '直播室设置是否加人', 'request': {'url': 'nuskin/live/room/$liveRoomId/config', 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'User-Agent': 'python-requests/2.21.0', 'token': '$token'}, 'json': {'liveRoomId': '$liveRoomId'}}, 'validate': [{'eq': ['$.code', '0']}, {'eq': ['$.success', True]}]}}" ]
+      }, {
+        "name" : "test_01[item1]",
+        "uid" : "20aad911e260558d",
+        "parentUid" : "d28e548c92decd38e2736bd622b7e63c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608794410844,
+          "stop" : 1608794411084,
+          "duration" : 240
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'test': {'name': '直播室列表-直属员工负责的', 'request': {'url': 'nuskin/live/room/list', 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'User-Agent': 'python-requests/2.21.0', 'token': '$token'}, 'json': {'liveRoomStatus': 0, 'liveRoomType': 1, 'liveRoomName': None}}, 'validate': [{'eq': ['$.code', '0']}, {'eq': ['$.success', True]}]}}" ]
+      } ],
+      "uid" : "d28e548c92decd38e2736bd622b7e63c"
+    } ],
+    "uid" : "13d926ab7ed57244f35f5a8c979da07b"
+  } ]
+}

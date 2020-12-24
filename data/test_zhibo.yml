@@ -1,0 +1,61 @@
+- test:
+    name: 直播室列表-我负责的
+    request:
+          url: nuskin/live/room/list
+          method: POST
+          headers:
+              Content-Type: application/json
+              User-Agent: python-requests/2.21.0
+              token: $token
+          json:
+              liveRoomStatus: 0
+              liveRoomType: 0
+              liveRoomName:
+    extract:
+          liveRoomId: $.data.data[1].liveRoomId
+    validate:
+          - eq: ["$.code", "0"]
+          - eq: ["$.success", True]
+- test:
+    name: 直播室列表-直属员工负责的
+    request:
+          url: nuskin/live/room/list
+          method: POST
+          headers:
+              Content-Type: application/json
+              User-Agent: python-requests/2.21.0
+              token: $token
+          json:
+              liveRoomStatus: 0
+              liveRoomType: 1
+              liveRoomName:
+    validate:
+          - eq: ["$.code", "0"]
+          - eq: ["$.success", True]
+- test:
+    name: 直播室设置是否加人前校验
+    request:
+          url: nuskin/live/room/$liveRoomId/to/config
+          method: GET
+          headers:
+              Content-Type: application/json
+              User-Agent: python-requests/2.21.0
+              token: $token
+    validate:
+          - eq: ["$.code", "-1"]
+          - eq: ["$.data", True]
+
+- test:
+    name: 直播室设置是否加人
+    request:
+          url: nuskin/live/room/$liveRoomId/config
+          method: POST
+          headers:
+              Content-Type: application/json
+              User-Agent: python-requests/2.21.0
+              token: $token
+          json:
+              liveRoomId: $liveRoomId
+    validate:
+          - eq: ["$.code", "0"]
+          - eq: ["$.success", True]

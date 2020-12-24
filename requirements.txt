@@ -1,0 +1,9 @@
+jsonpath==0.82
+allure_python_commons==2.8.13
+requests==2.21.0
+pandas==0.24.2
+ddt==1.1.3
+pytest==5.0.1
+openpyxl==2.5.11
+allure-pytest
+pytest-html
