@@ -9,8 +9,8 @@
 import os
 import pytest
 import allure
-
 import jsonpath
+
 
 from tools.read_yaml import DoYaml
 from tools.project_path import *
@@ -57,8 +57,8 @@ class Test:
 
 
 if __name__ == '__main__':
-    #多进程 多线程
+    pytest.main(['-vs','--alluredir=./temp'])
+    os.system('allure generate ./temp/ -o ./report --clean')
 
-    import pytest
-    pytest.main(['-s','-q','test_01.py','--workers=2','--test-per-worker=2','--alluredir','./Outputs/Reports'])
+
 
