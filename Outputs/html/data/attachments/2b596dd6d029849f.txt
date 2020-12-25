@@ -1,5 +1,0 @@
-{'name': '直播室列表-直属员工负责的', 'request': {'url': 'nuskin/live/room/list', 'method': 'POST', 'headers': {'Content-Type': 'application/json', 'User-Agent': 'python-requests/2.21.0', 'token': '$token'}, 'json': {'liveRoomStatus': 0, 'liveRoomType': 1, 'liveRoomName': None}}, 'validate': [{'eq': ['$.code', '0']}, {'eq': ['$.success', True]}]}
-实际结果：0
-期望结果：0
-实际结果：True
-期望结果：True

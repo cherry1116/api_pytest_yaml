@@ -1,0 +1,23 @@
+# Created by .ignore support plugin (hsz.mobi)
+将删除 .DS_Store
+将删除 .gitignore
+将删除 .idea/.name
+将删除 .idea/api_pytest_yaml.iml
+将删除 .idea/encodings.xml
+将删除 .idea/misc.xml
+将删除 .idea/modules.xml
+将删除 .idea/vcs.xml
+将删除 .idea/workspace.xml
+将删除 Outputs/html/plugins/jira/
+将删除 Outputs/html/plugins/junit/
+将删除 Outputs/html/plugins/trx/
+将删除 Outputs/html/plugins/xctest/
+将删除 Outputs/html/plugins/xray/
+将删除 Outputs/html/plugins/xunit-xml/
+将删除 data/.DS_Store
+将删除 tools/__pycache__/
+/.gitignore
+/Outputs/
+/.pytest_cache/
+/temp/
+/report/

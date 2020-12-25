@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Dec 24 15:20:10 CST 2020","Thu Dec 24 15:20:10 CST 2020","459","","test_01","Test","","","test_01[item0]",""
-"passed","Thu Dec 24 15:20:10 CST 2020","Thu Dec 24 15:20:11 CST 2020","240","","test_01","Test","","","test_01[item1]",""
-"passed","Thu Dec 24 15:20:11 CST 2020","Thu Dec 24 15:20:11 CST 2020","257","","test_01","Test","","","test_01[item3]",""
-"passed","Thu Dec 24 15:20:11 CST 2020","Thu Dec 24 15:20:11 CST 2020","187","","test_01","Test","","","test_01[item2]",""
