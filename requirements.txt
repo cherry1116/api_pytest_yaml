@@ -8,3 +8,5 @@ pytest-xdist
 openpyxl==2.5.11
 allure-pytest
 pytest-html
+pytest-ordering
+pytest-rerunfailures

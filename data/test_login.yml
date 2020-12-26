@@ -1,18 +1,18 @@
 - test:
     name: 登录
     request:
-        url: http://devinner.yunxuetang.com.cn/v1/udp/users/tokens
+        url: ******
         method: POST
         json:
-            userName: YWRtaW4=
-            password: MTIzNDU2
+            userName: admin
+            password: ******
             deviceId:
             isCheck: 1
             nb: 1
-            randstr: lt9
-            ticket: t0394cQClmc3s7LnV7wd_ejIR5XSCjhDUK-vr0EM7Hbraj9kFVRRViiuEf-W3WoOYQuwXBo6ZFSkk6WCPVuuhF4cJ8-jvMB6X7d
-            anonymousId: 172fe316a2810d0-00a54c193216398-491b3601-1296000-172fe316a29104e
-            domainName: dztest.qida.yunxuetang.com.cn
+            randstr: ******
+            ticket: ******
+            anonymousId: ******
+            domainName: ******
     extract:
         token: $.token
     validate:

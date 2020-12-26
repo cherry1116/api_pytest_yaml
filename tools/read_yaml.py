@@ -25,8 +25,6 @@ class  DoYaml():
         #     data = yaml.load(content, Loader=yaml.FullLoader)
             return yaml.load(open(test_case_path), Loader=yaml.FullLoader)
 
-            # yaml.load_all(open(filename), Loader=yaml.FullLoader)
-
 
 
 
